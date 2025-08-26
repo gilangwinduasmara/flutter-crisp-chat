@@ -162,6 +162,13 @@ class _MyAppState extends State<MyApp> {
                 },
                 child: const Text('Open Crisp Chat'),
               ),
+              ElevatedButton(
+                onPressed: () async {
+                  await FlutterCrispChat.openCrispChat(config: config);
+                  FlutterCrispChat.searchHelpdesk();
+                },
+                child: const Text('Open Helpdesk'),
+              )
             ],
           ),
         ),

@@ -147,4 +147,22 @@ class FlutterCrispChat {
       color: color,
     );
   }
+
+  /// [searchHelpdesk] opens crisp helpdesk tab
+  ///
+  /// This method allows users to access the Crisp helpdesk.
+  ///
+  /// {@category General}
+  static Future<void> searchHelpdesk() {
+    return FlutterCrispChatPlatform.instance.searchHelpdesk();
+  }
+
+  /// [openChat] opens crisp chat tab
+  ///
+  /// This method allows users to access the Crisp chat.
+  ///
+  /// {@category General}
+  static Future<void> openChat() {
+    return FlutterCrispChatPlatform.instance.openChat();
+  }
 }

@@ -146,6 +146,9 @@ public class FlutterCrispChatPlugin implements FlutterPlugin, MethodCallHandler,
             } else {
                 result.error("INVALID_ARGUMENTS", "Arguments must be a map", null);
             }
+        } else if (call.method.equals("searchHelpdesk")) {
+            Crisp.searchHelpdesk(context);
+            result.success(null);
         }
         else {
             result.notImplemented();

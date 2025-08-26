@@ -85,4 +85,18 @@ class MethodChannelFlutterCrispChat extends FlutterCrispChatPlatform {
       'color': color.name.toString(),
     });
   }
+
+  /// [searchHelpdesk] is use to invoke the Method Channel and call native
+  /// code with no arguments
+  @override
+  Future<void> searchHelpdesk() async {
+    await methodChannel.invokeMethod('searchHelpdesk');
+  }
+
+  /// [openChat] is use to invoke the Method Channel and call native
+  /// code with no arguments
+  @override
+  Future<void> openChat() async {
+    await methodChannel.invokeMethod('openChat');
+  }
 }

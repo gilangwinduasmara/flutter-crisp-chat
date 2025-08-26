@@ -72,4 +72,15 @@ abstract class FlutterCrispChatPlatform extends PlatformInterface {
   }) {
     throw UnimplementedError('pushSessionEvent() has not been implemented.');
   }
+
+  /// [searchHelpdesk] is to call native platform and if no implementation
+  /// Throws an error if no implementation is provided.
+  Future<void> searchHelpdesk() {
+    throw UnimplementedError('searchHelpdesk() has not been implemented.');
+  }
+  /// [openChat] is to call native platform and if no implementation
+  /// Throws an error if no implementation is provided.
+  Future<void> openChat() {
+    throw UnimplementedError('openChat() has not been implemented.');
+  }
 }

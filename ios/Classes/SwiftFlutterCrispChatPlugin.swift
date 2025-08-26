@@ -150,6 +150,11 @@ public class SwiftFlutterCrispChatPlugin: NSObject, FlutterPlugin, UIApplication
             let event = SessionEvent(name: name, color: eventColor)
             CrispSDK.session.pushEvents([event])
             result(nil)
+        case "searchHelpdesk":
+            CrispSDK.searchHelpdesk()
+            result(nil)
+        case "openChat":
+            CrispSDK.openChat()
         default:
             // Handles unimplemented method calls
             result(FlutterMethodNotImplemented)
